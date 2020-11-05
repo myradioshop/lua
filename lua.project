@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="lua" Version="11000" InternalType="Library">
+  <VirtualDirectory Name="lua">
+    <File Name="lzio.h"/>
+    <File Name="lzio.c"/>
+    <File Name="lvm.h"/>
+    <File Name="lvm.c"/>
+    <File Name="lundump.h"/>
+    <File Name="lundump.c"/>
+    <File Name="lualib.h"/>
+    <File Name="luaconf.h"/>
+    <File Name="lua.h"/>
+    <File Name="lua.c"/>
+    <File Name="ltm.h"/>
+    <File Name="ltm.c"/>
+    <File Name="ltests.h"/>
+    <File Name="ltests.c"/>
+    <File Name="ltablib.c"/>
+    <File Name="ltable.h"/>
+    <File Name="ltable.c"/>
+    <File Name="lstrlib.c"/>
+    <File Name="lstring.h"/>
+    <File Name="lstring.c"/>
+    <File Name="lstate.h"/>
+    <File Name="lstate.c"/>
+    <File Name="lparser.h"/>
+    <File Name="lparser.c"/>
+    <File Name="loslib.c"/>
+    <File Name="lopcodes.h"/>
+    <File Name="lopcodes.c"/>
+    <File Name="lobject.h"/>
+    <File Name="lobject.c"/>
+    <File Name="loadlib.c"/>
+    <File Name="lmem.h"/>
+    <File Name="lmem.c"/>
+    <File Name="lmathlib.c"/>
+    <File Name="llimits.h"/>
+    <File Name="llex.h"/>
+    <File Name="llex.c"/>
+    <File Name="liolib.c"/>
+    <File Name="linit.c"/>
+    <File Name="lgc.h"/>
+    <File Name="lgc.c"/>
+    <File Name="lfunc.h"/>
+    <File Name="lfunc.c"/>
+    <File Name="ldump.c"/>
+    <File Name="ldo.h"/>
+    <File Name="ldo.c"/>
+    <File Name="ldebug.h"/>
+    <File Name="ldebug.c"/>
+    <File Name="ldblib.c"/>
+    <File Name="lctype.h"/>
+    <File Name="lctype.c"/>
+    <File Name="lcorolib.c"/>
+    <File Name="lcode.h"/>
+    <File Name="lcode.c"/>
+    <File Name="lbitlib.c"/>
+    <File Name="lbaselib.c"/>
+    <File Name="lauxlib.h"/>
+    <File Name="lauxlib.c"/>
+    <File Name="lapi.h"/>
+    <File Name="lapi.c"/>
+  </VirtualDirectory>
+  <Reconciliation>
+    <Regexes/>
+    <Excludepaths/>
+    <Ignorefiles/>
+    <Extensions>
+      <![CDATA[*.cpp;*.c;*.h;*.hpp;*.xrc;*.wxcp;*.fbp]]>
+    </Extensions>
+    <Topleveldir>/data/lua</Topleveldir>
+  </Reconciliation>
+  <Description/>
+  <Dependencies/>
+  <Settings Type="Static Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu gcc" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;-O0;-std=c++14;-m32;-fPIC;-static-libstdc++" C_Options="-g;-m32;-fPIC" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="LUA_USE_LINUX"/>
+      </Compiler>
+      <Linker Options="-m32" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="libluad.a" IntermediateDirectory="" Command="$(WorkspacePath)/build-$(WorkspaceConfiguration)/bin/$(OutputFile)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(WorkspacePath)/build-$(WorkspaceConfiguration)/lib" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="CodeLite Makefile Generator"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu gcc" DebuggerType="GNU gdb debugger" Type="Static Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-std=c++14;-m32;-fPIC;-static-libstdc++" C_Options="-m32;-fPIC" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="LUA_USE_LINUX"/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="liblua.a" IntermediateDirectory="" Command="$(WorkspacePath)/build-$(WorkspaceConfiguration)/bin/$(OutputFile)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(WorkspacePath)/build-$(WorkspaceConfiguration)/lib" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="CodeLite Makefile Generator"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>
